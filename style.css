@@ -6,7 +6,7 @@
     --bg-dark: #212226;
     --light-grey: #e0dede;
 
-    --menu-height: 65px;
+    --menu-height: 75px;
 }
 
 *{
@@ -69,6 +69,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: var(--menu-height);
+    background: var(--bg-dark);
     padding: 0 100px;
     position: sticky;
     top: 0;
@@ -83,4 +84,9 @@ nav ul a {
     color: var(--green);
     text-decoration: none;
     margin: 0 35px;
+}
+
+section {
+    height: 1500px;
+    background: purple;
 }
