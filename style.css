@@ -96,6 +96,10 @@ nav ul a {
     text-decoration: none;
 }
 
+nav ul a svg {
+    display: none;
+}
+
 section {
     height: 1500px;
     background: purple;
@@ -103,22 +107,31 @@ section {
 
 /* RESPOSIVIDADE */
 
-/* TABLET */
-@media (max-width: 767px){
+/* Small Desktop */
+@media (max-width: 1000px) {
     header .container {
         width: 100%;
     }
+   
+    nav {
+        padding: 0 30px;
+    }
 
-    header .container img {
+    nav ul a {
+        font-size: 18px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 767px){
+
+ header .container img {
         display: inline;
         margin-bottom: 60px;
         width: 100px;
         height: 100px;
     }
 
-    nav {
-        padding: 0 30px;
-    }
     nav img {
         display: none;
     }
@@ -132,9 +145,22 @@ section {
     }
 }
 
-/* CELULAR */
+/* Celular */
 @media (max-width: 480px){
     header .container {
         padding: 0 40px;
+    }
+
+    nav {
+        padding: 0 15px;
+    }
+    
+    nav ul a {
+        font-size: 12px;
+    }
+
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px;
     }
 }
